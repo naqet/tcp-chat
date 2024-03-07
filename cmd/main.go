@@ -1,7 +1,9 @@
 package main
 
-import "fmt"
+import "github.com/naqet/tcp-chat/network"
 
 func main() {
-	fmt.Println("Hello world")
+	server := network.NewServer("localhost:8080")
+
+	server.Start()
 }
